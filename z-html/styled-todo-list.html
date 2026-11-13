@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Styled To-Do List</title>
+      <link rel="stylesheet" href="styles.css">
+
+    <style>
+        .todo-list{
+  padding: 10px;
+  box-shadow: 0 4px 8px;
+  border-radius: 10px;
+  max-width: 400px;
+  margin: auto;
+}
+
+ul h1{
+  text-align: center;
+}
+
+a:link{
+color: orange;
+}
+
+a:visited{
+color: gray;
+}
+
+a:hover{
+color: green;
+}
+
+a:focus{
+color: purple;
+outline: 2px solid gold;
+}
+
+a:active{
+color: rgb(210, 218, 210);
+}
+
+a{
+  text-decoration: none;
+}
+
+.todo-list li{
+  list-style-type: square;
+  list-style: none;
+  background-color: rgb(233, 233, 207);
+  margin: 0 0 20px 0;
+  padding: 10px;
+  border-radius: 10px;
+
+}
+.sub-item li{
+  list-style-type: square;
+
+}
+    </style>
+
+</head>
+
+<body>
+    
+    <ul class="todo-list">
+
+        <h1>My To-Do List</h1>
+
+        <li>
+            <input type="checkbox" id="check1" />
+            <label for="check1" >Check 1 </label>
+
+             <ul class="sub-item">
+        <li>
+            <a href="check1.com" target="_blank" class="sub-item-link" >Ai Movies</a>
+        </li>
+    </ul>
+        </li>
+
+        <li>
+            <input type="checkbox" id="check2" />
+            <label for="check2" >Check 2 </label>
+
+             <ul class="sub-item">
+        <li>
+            <a href="check1.com" target="_blank" class="sub-item-link" >Youtube Videos </a>
+        </li>
+    </ul>
+        </li>
+
+        <li>
+            <input type="checkbox" id="check3" />
+            <label for="check3" >Check 3 </label>
+
+             <ul class="sub-item">
+        <li>
+            <a href="check1.com" target="_blank" class="sub-item-link" >Facebook Videos </a>
+        </li>
+    </ul>
+        </li>
+
+        <li>
+            <input type="checkbox" id="check4" />
+            <label for="check4" >Check 4 </label>
+
+             <ul class="sub-item">
+        <li>
+            <a href="check1.com" target="_blank" class="sub-item-link" >How to write prompt </a>
+        </li>
+    </ul>
+        </li>
+
+    </ul>
+
+   
+</body>
+
+</html>

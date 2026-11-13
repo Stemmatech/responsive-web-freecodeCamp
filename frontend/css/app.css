@@ -1,0 +1,13 @@
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: minmax(150px, 300px) 1fr;
+  gap: 10px;
+}
+
+.box {
+  /* width: 100px; */
+  height: 100px;
+  background-color: darkblue;
+}

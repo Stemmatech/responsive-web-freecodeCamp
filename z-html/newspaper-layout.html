@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Newspaper Layout</title>
+  <link rel="stylesheet" href="styles.css">
+
+
+<style>
+    
+
+.newspaper-layout{
+  display: grid;
+  grid-template-areas: 'title title title' 'feature-article feature-article cover-image' 
+  'secondary-article secondary-article cover-image'
+  'small-article1 small-article2 small-article3';
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto 1fr 1fr 1fr;
+  gap: 1rem;
+
+
+  padding: 10px;
+
+}
+
+.title{
+  grid-area: title;
+}
+
+.feature-article{
+  grid-area: feature-article;
+}
+.cover-image{
+  grid-area: cover-image;
+}
+.secondary-article{
+  grid-area: secondary-article;
+}
+.small-article1{
+  grid-area: small-article1;
+}
+.small-article2{
+  grid-area: small-article2;
+}
+.small-article3{
+  grid-area: small-article3;
+}
+
+img{
+  max-width: 100%;
+}
+</style>
+
+
+</head>
+<body>
+  <main class="newspaper-layout">
+    <header class="title">
+      <h1>The Daily News</h1>
+    </header>
+
+    <article class="feature-article">
+      <h2>Major Breaking News</h2>
+      <p>This is the main headline story covering major events happening around the world today.</p>
+    </article>
+
+    <article class="secondary-article">
+      <h2>Local Updates</h2>
+      <p>An important secondary news section highlighting community developments and local insights.</p>
+    </article>
+
+    <figure class="cover-image">
+      <img src="https://via.placeholder.com/400x300" alt="Newspaper cover image">
+    </figure>
+
+    <article class="small-article1">
+      <h3>Tech Trends</h3>
+      <p>Quick brief about the latest technological advancements.</p>
+    </article>
+
+    <article class="small-article2">
+      <h3>Market Watch</h3>
+      <p>Short update on global markets and economic trends.</p>
+    </article>
+
+    <article class="small-article3">
+      <h3>Weather Report</h3>
+      <p>Brief overview of the upcoming weather forecast.</p>
+    </article>
+  </main>
+</body>
+</html>

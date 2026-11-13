@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1 id="title">Survey form</h1>
+    <p id="description">this is a survey form</p>
+
+    <form action="" id="survey-form">
+        <label for="name" id="name-label">Name</label>
+        <input type="text" id="name" name="name" required placeholder="Enter your name">
+
+        <label for="email" id="email-label">Email</label>
+        <input type="email" id="email" required placeholder="Enter your email">
+        
+        <label for="number" id="number-label">Number</label>
+        <input type="number" id="number" min="2" max="10" placeholder="Select a number">
+
+        <select name="dropdown" id="dropdown">
+            <option value="">Good</option>
+            <option value="">Poor</option>
+        </select>
+
+        <fieldset>
+            <input type="radio" class="radio" value="feed">
+            <input type="radio" class="radio" value="feed">
+        </fieldset>
+
+        <fieldset>
+            <input type="checkbox" class="radio" value="is a checkbox">
+            <input type="checkbox" class="radio" value="is a checkbox">
+        </fieldset>
+
+        <textarea name="comment" id="comment" cols="4" rows="20">Comment</textarea>
+        <textarea name="comment" id="comment" cols="4" rows="20">Comment</textarea>
+        <textarea name="comment" id="comment" cols="4" rows="20">Comment</textarea>
+        <textarea name="comment" id="comment" cols="4" rows="20">Comment</textarea>
+        <textarea name="comment" id="comment" cols="4" rows="20">Comment</textarea>
+        <textarea name="comment" id="comment" cols="4" rows="20">Comment</textarea>
+        <button id="submit">Submit</button>
+
+
+
+    </form>
+    
+</body>
+</html>
